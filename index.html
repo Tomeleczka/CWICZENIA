@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>cwiczenia</title>
+	</head>
 
-<head>
-	<title>cwiczenia</title>
-</head>
+	<body>
+		
+		<button id="pierwszy" onclick="ciastko()">Wciśnij mnie</button>
 
-<body>
+		<button id="drugi" onclick="ciastka()">Tutaj jestem</button>
 
-</body>
+		<button id="trzeci" onclick="parasolka()">Naciśnij</button>
 
+		<p id="demo"></p>
+
+	<script type="text/javascript">
+		
+		function jablko(a,b){
+			console.log(a+b);
+		}
+
+		jablko(2,5);
+
+		function ciastko(){
+			alert("OJEJ");
+		}
+
+		function ciastka(){
+			confirm("na pewno?")
+		}
+
+		function parasolka(){
+
+			var imie = prompt("jak masz na imie?" , "Harry Potter");
+			if (imie !=null) {
+			document.getElementById("demo").innerHTML= "Hello " + imie + " jak tam?";			
+			}
+		}
+
+	</script>
+	
+	</body>
 </html>
